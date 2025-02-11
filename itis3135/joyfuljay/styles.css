@@ -1,0 +1,26 @@
+body{
+    background-color: #51b5f8;
+    text-align: center;
+    color: #006400;
+    font-family: garamond, sans-serif;
+    font-size: 18px;
+}
+
+a{  
+    color: #006400;
+
+}
+
+a:hover{
+    color: #f6d208;
+}
+
+main{
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h2{
+    text-align: center;
+}
