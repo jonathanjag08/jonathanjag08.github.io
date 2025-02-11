@@ -3,7 +3,7 @@ body{
     text-align: center;
     color: #006400;
     font-family: garamond, sans-serif;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 a{  
@@ -22,5 +22,10 @@ main{
 }
 
 h2{
+    text-align: center;
+}
+
+footer{
+    font-size: 25px;
     text-align: center;
 }
