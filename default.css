@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+    text-align: center;
+    color: #F2B544;
+    font-family: Optima, sans-serif;
+    font-size: 20px;
+}
+
+a{
+    color: #F2B544;
+
+}
+
+a:hover{
+    color: #A61414
+}
+
+main{
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h2{
+    text-align: center;
+}
+
+img{
+    width: 35%;
+}
+
+figure{
+    text-align: center;
+    font-style: italic;
+}
