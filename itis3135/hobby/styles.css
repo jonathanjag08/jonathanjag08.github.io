@@ -1,4 +1,13 @@
+body{
+    font-family: Roboto, sans-serif;
+}
 #how-pic {
     max-height: 40%;
     max-width: 15%;
+}
+
+.content-section{
+    display: none;
+    padding: 20px;
+    margin-top: 20px;
 }
