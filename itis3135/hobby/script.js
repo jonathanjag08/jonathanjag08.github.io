@@ -1,52 +1,33 @@
-// Select all nav links and content sections
-const navLinks = document.querySelectorAll('.nav-link');
-const contentSections = document.querySelectorAll('.content-section');
-
-
-// Function to show the default section
-function showSection(sectionId) {
-    // Hide all sections by setting their display to 'none'
-    contentSections.forEach((section) => {
-        section.style.display = 'none';
-    });
-
-    // Find the section with the given ID
-    const targetSection = document.getElementById(sectionId);
-
-    // If the section exists, set its display to 'block' to make it visible
-    if (targetSection) {
-        targetSection.style.display = 'block';
+document.addEventListener('DOMContentLoaded', function() {
+    // Select all navigation links
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    // Function to hide all sections
+    function hideSections() {
+        const sections = document.querySelectorAll('.content-section');
+        sections.forEach((section) => {
+            section.style.display = 'none';
+        });
     }
-}
 
+    // Function to show the clicked section
+    function showSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.style.display = 'block';
+        }
+    }
 
-// Add event listeners to each nav link
-navLinks.forEach((link) => {
-    link.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent default link behavior
-
-        // Show the clicked section
-        const targetId = link.getAttribute('data-target');
-        showSection(targetId);
+    // Event listener for each nav link
+    navLinks.forEach((link) => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent default link behavior
+            hideSections(); // Hide all sections
+            const targetId = link.getAttribute('data-target'); // Get the section to show
+            showSection(targetId); // Show the relevant section
+        });
     });
+
+    // Optionally, show the first section by default (or none if you prefer)
+    showSection('who');
 });
-
-// Add event listeners to each nav link
-navLinks.forEach((link) => {
-    link.addEventListener('click', function(event) {
-        // Prevent default link behavior
-        event.preventDefault();
-
-        // Show the clicked section
-        const targetId = link.getAttribute('data-target');
-        showSection(targetId);
-    });
-});
-
-// Show Section 2 by default when the page loads
-window.onload = () => {
-    // Shows the section with the given ID.
-     
-    showSection('what');
-
-};
