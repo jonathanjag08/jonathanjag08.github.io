@@ -39,10 +39,38 @@ nav ul li a{
     text-decoration: none;
     font-size: 20px;
 }
+
+#who-pic {
+    max-height: 40%;
+    max-width: 25%;
+}
+
+#what-pic {
+    max-height: 40%;
+    max-width: 25%;
+}
+
+#when-pic {
+    max-height: 40%;
+    max-width: 25%;
+}
+
+#where-pic {
+    max-height: 40%;
+    max-width: 35%;
+}
+
+
 #how-pic {
     max-height: 40%;
     max-width: 15%;
 }
+
+#why-pic {
+    max-height: 40%;
+    max-width: 35%;
+}
+
 
 .content-section{
     display: none;
@@ -56,4 +84,8 @@ a{
 
 a:hover{
     color: #7BAFD4;
+}
+
+figure{
+    text-align: center;
 }
