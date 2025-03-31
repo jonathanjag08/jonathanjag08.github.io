@@ -4,56 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BYO Introduction Page</title>
+    <script defer src="scripts/survey.js"></script>
     <link rel="stylesheet" href="styles/default.css">
-    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <div data-include="components/header.html"></div>
-    </header>
-    <main>
-        <h2>Build Your Own BYO Page</h2>
-        <h3>Time to BYO Intro Page, please fill out the form below so we can create your own page.</h3>
 
-        <form id="intro-form">
-            <label>Name: <input type="text" name="name" required></label><br>
-            <label>Mascot: <input type="text" name="mascot" required></label><br>
+    <header id="header"><div data-include="components/header.html"></div></header>
+    
+    <main>
+        <h2>Build Your Own Introduction Page</h2>
+        <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+
+        <form id="introForm">
+            <label>Name: <input type="text" id="name" required></label><br>
+            <label>Mascot: <input type="text" id="mascot" required></label><br>
+            
             <label>Image Upload: 
-                <input type="file" name="image" accept="image/png, image/jpeg" required>
+                <input type="file" id="image" accept="image/png, image/jpeg" required>
             </label><br>
 
-            <label>Image Caption: <input type="text" name="caption" required></label><br>
-            <label>Personal Background: <input type="text" name="background" required></label><br>
-            <label>Professional Background: <input type="text" name="professional" required></label><br>
-            <label>Academic Background: <input type="text" name="academic" required></label><br>
-            <label>Background in this Subject: <input type="text" name="subject" required></label><br>
-            <label>Primary Computer Platform: <input type="text" name="platform" required></label><br>
-            
-            <h4>Courses Currently Taking: </h4>
+            <label>Image Caption: <input type="text" id="caption" required></label><br>
+
+            <label>Personal Background: <textarea id="personalBackground" required></textarea></label><br>
+            <label>Professional Background: <textarea id="professionalBackground" required></textarea></label><br>
+            <label>Academic Background: <textarea id="academicBackground" required></textarea></label><br>
+            <label>Web Development Background: <textarea id="webDevBackground" required></textarea></label><br>
+            <label>Primary Computer Platform: <input type="text" id="computerPlatform" required></label><br>
+
+            <h4>Courses Currently Taking:</h4>
             <div id="courses">
-                <button type="button" id="add-course">Add Course</button>
+                <button type="button" id="addCourse">Add Course</button>
             </div>
 
-            <label>Funny thing about Me: <input type="text" name="funny" required></label><br>
-            <label>Anything Else: <input type="text" name="interesting" required></label><br>
+            <label>Funny Thing About Me: <textarea id="funnyThing"></textarea></label><br>
+            <label>Anything Else? <textarea id="anythingElse"></textarea></label><br>
+
             <label>
-                <input type="checkbox" id="agreeement" required>
-                 I understand that what is 
-                    on this page is not password protected and I 
-                    will not put anything here that I don’t want publicly 
-                    available.
+                <input type="checkbox" id="agreement" required>
+                I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
             </label><br>
+
             <input type="submit" value="Submit">
             <input type="reset" value="Reset" id="resetForm">
-
         </form>
 
         <div id="output" style="display:none;"></div>
-    
     </main>
-    <footer>
-        <div data-include="components/footer.html"></div>
-    </footer>
-   <script src="scripts/htmlinclude.min.js"></script>
+
+    <footer id="footer"><div data-include="components/footer.html"></div>
+    </footer> 
+    <script src="scripts/htmlinclude.min.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
