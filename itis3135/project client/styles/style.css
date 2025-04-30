@@ -184,4 +184,32 @@ h2{
     height: auto;
     border-radius: 8px;
 }
-    
+
+.skate-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.skate-item {
+    text-align: center;
+    max-width: 300px;
+}
+
+.skate-img {
+    width: 300px;
+    height: 200px;
+    object-fit: contain; /* Shows full image without cropping */
+    display: block;
+    margin: 0 auto;
+    background-color: #f0f0f0; /* Optional: adds contrast around image if it doesn't fill space */
+}
+
+.caption {
+    margin-top: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
