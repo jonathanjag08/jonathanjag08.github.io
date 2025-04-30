@@ -16,7 +16,7 @@ footer{
     color: aliceblue;
     padding: 10px;
     text-align: center;
-    margin: 0px;
+    margin-top: 40px;
 }
 
 
@@ -171,3 +171,17 @@ p{
 h2{
     text-align: center;
 }
+
+.image-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px
+}
+
+.image-row img{
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+    
