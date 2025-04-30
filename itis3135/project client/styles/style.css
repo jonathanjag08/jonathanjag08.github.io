@@ -213,3 +213,14 @@ h2{
     font-weight: 500;
     color: #333;
 }
+
+.caption a {
+    text-decoration: none;
+    color: rgb(255, 140, 0);
+    
+}
+
+.caption a:hover {
+    text-decoration: underline;
+    background-color: rgb(128, 128, 128);
+}
