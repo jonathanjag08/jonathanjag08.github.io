@@ -224,3 +224,7 @@ h2{
     text-decoration: underline;
     background-color: rgb(128, 128, 128);
 }
+
+h3{
+    text-align: center;
+}
