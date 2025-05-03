@@ -41,6 +41,24 @@ li {
     text-align: left;
 }
 
+tr, td {
+    padding: 10px;
+    border: black 1.5px solid;
+    background-color: darkgoldenrod;
+    
+    color: #fff;
+  
+    font-size: 0.8em;
+}
+
+th{
+    border: black 1.5px solid;
+    
+    background-color: darkgreen;
+    color: #fff;
+}
+
+
 
 
 .slideshow-container {
